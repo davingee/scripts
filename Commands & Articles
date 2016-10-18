@@ -1,19 +1,19 @@
-systemctl
-systemctl | more
-systemctl | grep redis
-systemctl list-units --type service
-systemctl list-units --type mount
+    systemctl
+    systemctl | more
+    systemctl | grep redis
+    systemctl list-units --type service
+    systemctl list-units --type mount
 
-ps -aux |grep redis
+    ps -aux |grep redis
 
-systemctl status |grep redis
+    systemctl status |grep redis
 
-systemctl |grep redis
-  redis-6380.service                               loaded active running   Redis persistent key-value database
-  redis-6381.service                               loaded active running   Redis persistent key-value database
-  redis-6382.service                               loaded active running   Redis persistent key-value database
-  redis.service                                    loaded active running   Redis persistent key-value database
+    systemctl |grep redis
+      redis-6380.service                               loaded active running   Redis persistent key-value database
+      redis-6381.service                               loaded active running   Redis persistent key-value database
+      redis-6382.service                               loaded active running   Redis persistent key-value database
+      redis.service                                    loaded active running   Redis persistent key-value database
 
-sudo systemctl stop redis
-sudo systemctl start redis
-sudo systemctl restart redis
+    sudo systemctl stop redis
+    sudo systemctl start redis
+    sudo systemctl restart redis
